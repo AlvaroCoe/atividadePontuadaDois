@@ -9,7 +9,7 @@ public class FornecedorRequestDTO {
     @NotBlank(message = "Informe seu nome!")
     private String nome;
 
-    @NotBlank(message = "Informe seu cpf!")
+    @NotBlank(message = "Informe o CNPJ de sua empresa!")
     private String cnpj;
 
     @NotBlank(message = "Informe seu email!")

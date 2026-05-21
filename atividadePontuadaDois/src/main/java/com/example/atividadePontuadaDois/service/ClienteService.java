@@ -45,7 +45,7 @@ public class ClienteService {
         novoCliente.setCpf(dto.getCpf());
         novoCliente.setDataNascimento(dto.getDataNascimento());
         novoCliente.setEmail(dto.getEmail());
-        novoCliente.setSenha(dto.getSenha());
+        novoCliente.setSenha(passwordEncoder.encode(dto.getSenha()));
 
         return repository.save(novoCliente);
 

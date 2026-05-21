@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Welcome {
 
-    @RestController
-    public class BemVindo {
         @GetMapping("/")
         public String mensagem() {
             return "Seja bem vindo à segunda atividade Pontuada!";
@@ -25,7 +23,6 @@ public class Welcome {
                     "O link abaixo você pode acessar meu repositório no git para acessá-la: \n" +
                     "https://github.com/AlvaroCoe/atividadePontuadaDois";
 
-        }
-
     }
+
 }
